@@ -2,10 +2,11 @@ package com.dio.base;
 
 public class Main {
 
-	static String nomeMes = "";
-	static int numMes = 3;		
+	static String nomeMes;
+	static int numMes = 3;
+	static String nomeDia = "Terça-feira";
+	static int numDia;
 
-	
 	public static void main(String[] args) {
 
 		int numMes = 3;		
@@ -46,6 +47,35 @@ public class Main {
 		} else {
 			System.out.println("Valor inválido.");
 		}
+		
+		switch(nomeDia) {
+		case "Domingo":
+			numDia = 1;
+			break;
+		case "Segunda-feira":
+			numDia = 2;
+			break;
+		case "Terça-feira":
+			numDia = 3;
+			break;
+		case "Quarta-feira":
+			numDia = 4;
+			break;
+		case "Quinta-feira":
+			numDia = 5;
+			break;
+		case "Sexta-feira":
+			numDia = 6;
+			break;
+		case "Sábado":
+			numDia = 7;
+			break;
+		default:
+			System.out.println("Valor inválido.");
+			break;
+		}
+		
+		System.out.println("O dia " + nomeDia + " é o dia de número " + numDia + ".");
 	}
 
 }
