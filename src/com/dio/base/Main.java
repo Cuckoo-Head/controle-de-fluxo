@@ -2,10 +2,14 @@ package com.dio.base;
 
 public class Main {
 
-	static String nomeMes;
 	static int numMes = 3;
+	static String nomeMes;
+	
 	static String nomeDia = "Terça-feira";
 	static int numDia;
+	
+	static int n = 4;
+	static String mensagem;
 
 	public static void main(String[] args) {
 
@@ -76,6 +80,28 @@ public class Main {
 		}
 		
 		System.out.println("O dia " + nomeDia + " é o dia de número " + numDia + ".");
+		
+		switch(n) {
+		case 1:
+			mensagem = "Certo";
+			break;
+		case 2:
+			mensagem = "Certo";
+			break;
+		case 3:
+			mensagem = "Certo";
+			break;
+		case 4:
+			mensagem = "Errado";
+			break;
+		case 5:
+			mensagem = "Talvez";
+			break;
+		default:
+			System.out.println("Valor inválido.");
+		}
+		
+		System.out.println(mensagem);
 	}
 
 }
