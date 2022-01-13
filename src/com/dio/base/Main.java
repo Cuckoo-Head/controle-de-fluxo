@@ -13,6 +13,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		// 01) Descobrir o nome do mês
 		int numMes = 3;		
 		if(numMes == 1) {
 			nomeMes = "Janeiro";
@@ -44,6 +45,8 @@ public class Main {
 		
 		System.out.println("O mês de número " + numMes + " é " + nomeMes + ".");
 
+		// 02) Descobrir se está de férias
+		
 		if(numMes == 1 || numMes == 8 || numMes == 12) {
 			System.out.println("Você está de férias.");
 		} else if (numMes >= 1 && numMes <= 12) {
@@ -51,6 +54,8 @@ public class Main {
 		} else {
 			System.out.println("Valor inválido.");
 		}
+		
+		// 03) Descobrir o número do dia
 		
 		switch(nomeDia) {
 		case "Domingo":
@@ -80,6 +85,8 @@ public class Main {
 		}
 		
 		System.out.println("O dia " + nomeDia + " é o dia de número " + numDia + ".");
+		
+		// 04) Exercício com switch-case
 		
 		switch(n) {
 		case 1:
